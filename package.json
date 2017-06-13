@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "init": "node server/start.js",
+    "start": "node server/start.js"
+  },
   "dependencies": {
     "bluebird": "^3.5.0",
     "cron": "^1.2.1",
