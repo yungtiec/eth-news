@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init": "node server/start.js",
-    "start": "node server/start.js"
+    "init": "node index",
+    "start": "node index"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
