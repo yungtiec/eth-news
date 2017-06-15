@@ -38,16 +38,17 @@ let scrapeGoogleNews = () => {
         })
         .catch(err => console.error(err));
 };
-let morningScrape = new CronJob({
-    cronTime: '00 30 9 * * *',
-    onTick: function() {
-        scrapeGoogleNews();
-    },
-    start: true
-}), eveningScrape = new CronJob({
-    cronTime: '00 30 18 * * *',
-    onTick: function() {
-        scrapeGoogleNews();
-    },
-    start: true
-});
+// let morningScrape = new CronJob({
+//     cronTime: '00 30 9 * * *',
+//     onTick: function() {
+//         scrapeGoogleNews();
+//     },
+//     start: true
+// }), eveningScrape = new CronJob({
+//     cronTime: '00 30 18 * * *',
+//     onTick: function() {
+//         scrapeGoogleNews();
+//     },
+//     start: true
+// });
+scrapeGoogleNews()
